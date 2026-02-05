@@ -1,15 +1,14 @@
 import React from "react";
-import { TbTruckDelivery } from "react-icons/tb";
-import { FaRegBuilding } from "react-icons/fa";
-import { SlChemistry } from "react-icons/sl";
-import { GrAchievement } from "react-icons/gr";
-const Middle = () => {
+import { IoKey } from "react-icons/io5";
+import { LuFileSpreadsheet } from "react-icons/lu";
+import { HiCurrencyDollar } from "react-icons/hi2";
+const FinallyMiddle = () => {
   return (
     <div>
-      <div className="hover-3d">
+      <div className="hover-3d ">
         {/* content */}
-        <figure className="w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10">
-          <FaRegBuilding size={50} />
+        <figure className=" w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10">
+          <IoKey size={80} />
           <h1>18 заводов по всему миру</h1>
           <div className="w-[60px] h-[2px] rounded-2xl bg-sky-700"></div>
         </figure>
@@ -18,24 +17,23 @@ const Middle = () => {
       <div className="hover-3d">
         {/* content */}
         <figure className="w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10">
-          <SlChemistry size={50} />
+          <LuFileSpreadsheet size={80} />
           <h1>18 заводов по всему миру</h1>
           <div className="w-[60px] h-[2px] rounded-2xl bg-sky-700"></div>
         </figure>
-        {/* 8 empty divs needed for the 3D effect */}
       </div>
 
       <div className="hover-3d">
         {/* content */}
-        <figure className="w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10 ">
-          <GrAchievement size={50} />
+        <figure className="w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10">
+          <HiCurrencyDollar size={80} />
           <h1>18 заводов по всему миру</h1>
+
           <div className="w-[60px] h-[2px] rounded-2xl bg-sky-700"></div>
         </figure>
-        {/* 8 empty divs needed for the 3D effect */}
       </div>
     </div>
   );
 };
 
-export default Middle;
+export default FinallyMiddle;

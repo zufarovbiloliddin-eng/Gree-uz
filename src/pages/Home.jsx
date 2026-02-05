@@ -5,6 +5,7 @@ import Swiper from "../Components/Swiper";
 import Prism from "../Components/Galaxy";
 import Middle from "../Components/Middle";
 import SecondMiddle from "../Components/SecondMiddle";
+import FinallyMiddle from "../Components/FinallyMiddle";
 
 const Home = () => {
   return (
@@ -37,18 +38,18 @@ const Home = () => {
       </div>
       <div className="flex items-center justify-center flex-wrap py-10 mt-40 gap-5">
         <Middle />
-        <Middle />
+        <FinallyMiddle />
       </div>
       <div className="container w-[85%] m-auto">
-        <h1 className="text-center mt-20 font-bold text-3xl ">Технологии, созданные для вашего комфорта</h1>
+        <h1 className="text-center mt-20 font-bold text-3xl ">
+          Технологии, созданные для вашего комфорта
+        </h1>
         <div className="flex items-center justify-center flex-wrap gap-20  mt-10">
-
-        <SecondMiddle />
-        <SecondMiddle />
-        <SecondMiddle />
-        <SecondMiddle />
+          <SecondMiddle />
+          <SecondMiddle />
+          <SecondMiddle />
+          <SecondMiddle />
         </div>
-
       </div>
     </div>
   );
