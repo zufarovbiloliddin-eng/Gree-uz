@@ -4,29 +4,15 @@ import Orb from "./Galaxy";
 import Swiper from "../Components/Swiper";
 const Header = () => {
   return (
-    <div className="relative w-full h-150">
-      {/* Orb orqa fon */}
-      <div className=" absolute inset-0 ">
-        <Orb
-          hoverIntensity={1}
-          rotateOnHover
-          hue={300}
-          forceHoverState={false}
-          backgroundColor="#000000"
-        />
-      </div>
-
-      {/* Header content */}
+    <div>
       <div className="container mx-auto w-[85%] relative z-20">
         <div className="flex items-center justify-between py-10">
-          {/* Logo */}
           <figure>
             <Link to={"/"}>
               <img className="w-40" src={logo} alt="" />
             </Link>
           </figure>
 
-          {/* Menu */}
           <ul className="flex items-center gap-10">
             <li className="hover:text-blue-800">
               <Link to={"/"}>BOSH SAHIFA</Link>
@@ -48,7 +34,6 @@ const Header = () => {
             </li>
           </ul>
 
-          {/* Language select */}
           <div>
             <select
               defaultValue="Pick a font"
@@ -61,7 +46,6 @@ const Header = () => {
           </div>
         </div>
       </div>
-      <Swiper />
     </div>
   );
 };

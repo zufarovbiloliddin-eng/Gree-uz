@@ -4,7 +4,17 @@
 
 * {
 
- font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
 
 
+}
+
+.text-position {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    text-align: start;
+    position: relative;
+    bottom: 120px;
+    padding: 5px;
 }
