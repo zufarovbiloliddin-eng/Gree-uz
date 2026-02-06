@@ -2,7 +2,15 @@ import { Link } from "react-router-dom";
 import logo from "../assets/с.png";
 import Orb from "./Galaxy";
 import Swiper from "../Components/Swiper";
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (event) => {
+    i18n.changeLanguage(event.target.value);
+  };
+
   return (
     <div>
       <div className="container mx-auto w-[85%] relative z-20">
@@ -15,19 +23,19 @@ const Header = () => {
 
           <ul className="flex items-center gap-10">
             <li className="hover:text-blue-800">
-              <Link to={"/"}>BOSH SAHIFA</Link>
+              <Link to={"/"}>{t("home")}</Link>
             </li>
             <li className="hover:text-blue-800">
-              <Link to={"/About"}>KOMPANIYA HAQIDA</Link>
+              <Link to={"/About"}>{t("about")}</Link>
             </li>
             <li className="hover:text-blue-800">
-              <Link to={"/Contact"}>ALOQA</Link>
+              <Link to={"/Contact"}>{t("contact")}</Link>
             </li>
             <li className="hover:text-blue-800">
-              <Link to={"/Delivery"}>YETKAZIB BERISH</Link>
+              <Link to={"/Delivery"}>{t("delivery")}</Link>
             </li>
             <li className="hover:text-blue-800">
-              <Link to={"/Partners"}>HAMKOR BOLISH</Link>
+              <Link to={"/Partners"}>{t("partners")}</Link>
             </li>
             <li className="hover:text-blue-800">
               <a href="tel:+998946187788">+998946187788</a>
@@ -36,12 +44,13 @@ const Header = () => {
 
           <div>
             <select
-              defaultValue="Pick a font"
+              value={i18n.language}
+              onChange={changeLanguage}
               className="select select-ghost rounded-xs outline-none bg-transparent w-[100px]"
             >
-              <option>Rus</option>
-              <option>O'zb</option>
-              <option>Eng</option>
+              <option value="uz">Uzb</option>
+              <option value="ru">Rus</option>
+              <option value="en">Eng</option>
             </select>
           </div>
         </div>

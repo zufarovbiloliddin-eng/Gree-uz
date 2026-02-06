@@ -6,7 +6,6 @@ import Prism from "../Components/Galaxy";
 import Middle from "../Components/Middle";
 import SecondMiddle from "../Components/SecondMiddle";
 import FinallyMiddle from "../Components/FinallyMiddle";
-
 const Home = () => {
   return (
     <div className="relative">
