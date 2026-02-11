@@ -19,7 +19,7 @@ const Middle = () => {
         {/* content */}
         <figure className="w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10">
           <SlChemistry size={50} />
-          <h1>18 заводов по всему миру</h1>
+          <h1>1411 лабораторий</h1>
           <div className="w-[60px] h-[2px] rounded-2xl bg-sky-700"></div>
         </figure>
         {/* 8 empty divs needed for the 3D effect */}
@@ -29,7 +29,7 @@ const Middle = () => {
         {/* content */}
         <figure className="w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10 ">
           <GrAchievement size={50} />
-          <h1>18 заводов по всему миру</h1>
+          <h1>500 млн+ покупателей</h1>
           <div className="w-[60px] h-[2px] rounded-2xl bg-sky-700"></div>
         </figure>
         {/* 8 empty divs needed for the 3D effect */}

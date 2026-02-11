@@ -9,7 +9,7 @@ const FinallyMiddle = () => {
         {/* content */}
         <figure className=" w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10">
           <IoKey size={80} />
-          <h1>18 заводов по всему миру</h1>
+          <h1>Собственный сервисный центр</h1>
           <div className="w-[60px] h-[2px] rounded-2xl bg-sky-700"></div>
         </figure>
       </div>
@@ -18,7 +18,7 @@ const FinallyMiddle = () => {
         {/* content */}
         <figure className="w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10">
           <LuFileSpreadsheet size={80} />
-          <h1>18 заводов по всему миру</h1>
+          <h1>10 лет гарантии</h1>
           <div className="w-[60px] h-[2px] rounded-2xl bg-sky-700"></div>
         </figure>
       </div>
@@ -27,7 +27,7 @@ const FinallyMiddle = () => {
         {/* content */}
         <figure className="w-60 h-[300px] rounded-2xl flex items-center gap-10 flex-col p-10">
           <HiCurrencyDollar size={80} />
-          <h1>18 заводов по всему миру</h1>
+          <h1>Возможна рассрочка</h1>
 
           <div className="w-[60px] h-[2px] rounded-2xl bg-sky-700"></div>
         </figure>

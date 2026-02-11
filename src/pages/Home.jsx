@@ -6,6 +6,10 @@ import Prism from "../Components/Galaxy";
 import Middle from "../Components/Middle";
 import SecondMiddle from "../Components/SecondMiddle";
 import FinallyMiddle from "../Components/FinallyMiddle";
+import ServicesSection from "../Components/ServicesSection";
+import OurBrand from "../Components/OurBrand";
+import ComfortSwiper from "../Components/ComfortSwiper";
+import Footer from "../Components/Footer";
 const Home = () => {
   return (
     <div className="relative">
@@ -49,6 +53,41 @@ const Home = () => {
           <SecondMiddle />
           <SecondMiddle />
         </div>
+        <ServicesSection />
+        <section>
+          <div className="backdrop-blur-xl bg-gradient-to-br from-white/10 to-white/5 rounded-3xl p-8 border border-white/20 shadow-2xl space-y-6">
+            <OurBrand />
+            <div className="flex items-center justify-between">
+              <div className=" ">
+                <ComfortSwiper />
+              </div>
+              <h1 className="text-5xl font-bold text-black ">
+                комфорт во всем
+              </h1>
+              <div>
+                <ComfortSwiper />
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <footer className="">
+          <Footer />
+              <div className="mt-[50px] py-10 backdrop-blur-xl bg-gradient-to-br from-white/10 to-white/5 rounded-3xl p-8 border border-white/20 shadow-2xl space-y-6 ">
+            <iframe
+              style={{
+                border: 0,
+                width: "100%",
+                height: "350px",
+                borderRadius: "20px",
+              }}
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d604.3819651335272!2d69.28644138240665!3d41.36683659837366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8d2b7364ca3b%3A0x17ae9b1138235319!2sMARS%20IT%20school%20yunusobod!5e0!3m2!1sru!2s!4v1770647612142!5m2!1sru!2s"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </footer>
       </div>
     </div>
   );

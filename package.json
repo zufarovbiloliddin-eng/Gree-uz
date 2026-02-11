@@ -16,6 +16,7 @@
     "i18next": "^25.8.4",
     "icons": "^1.0.0",
     "localforage": "^1.10.0",
+    "lucide-react": "^0.563.0",
     "match-sorter": "^8.2.0",
     "motion": "^12.29.2",
     "ogl": "^1.0.11",
